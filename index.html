@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Suohenmaan hyvinvointialue - rekrytehtävä</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="./icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  </head>
+
+  <body>
+    <!-- ||| Top bar Script in index.js-->
+    <nav class="topnav" id="myTopnav">
+      <a href="#data">Data-analytiikka</a>
+      <a href="#users">Käyttäjät</a>
+      <a href="#weight-trend">Painonmuutostilastot</a>
+      <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+
+
+    <!-- ||| Page content -->
+    <main>
+      <!-- ||| Data-analytics home -->
+      <section id="data">
+        <h1>Data-analytiikka alusta</h1>
+        <hr>
+        <div>
+            Tervetuloa Onnikan data-analytiikka alustalle. Tämä alusta on suunniteltu Suohenmaan hyvinvointialueen (Suoha) ammattilaisille. Täällä voit seurata reaaliaikaista tietoa Onnikan käyttöön liittyen data-visualisointien avulla. 
+        </div>
+
+        <!-- Data cards. Script in chart.js -->
+        <div class="wrap">
+          <div class="dataCard">Käyttäjiä:
+            <p id="currentUsers" class="strong"></p>
+            kappaletta
+          </div>
+          <div class="dataCard">Keskimäärin:
+            <p id="avgWeightChange" class="strong"></p>
+            kg/kk
+          </div>
+          <div class="dataCard">Yhteensä:
+            <p id="totalWeightLoss" class="strong"></p>
+            kg
+          </div>
+        </div>
+      </section>
+
+      <!-- ||| Users. Script in chart.js -->
+      <section id="users" class="grey">
+        <h2>Käyttäjämäärät</h2>
+        <hr>
+        <div>
+          Tällä osiolla voit tarkastella sivuston käyttäjämäärien kehitystä.
+        </div>
+        <div class="chart">
+          <div id="users_chart"></div>
+          <!-- Modal Script in index.js-->
+          <button id="usersModalBtn">Avaa taulukossa</button>
+        </div>
+      </section>
+
+      <!-- ||| Weight Trends. Script in chart.js -->
+      <section id="weight-trend">
+        <h2>Käyttäjien painonmuutostilastot</h2>
+        <hr>
+        <div>
+          Tässä näet tilastot käyttäjien painonmuutoksesta.
+        </div>
+        <div class="chart">
+          <div id="weight_chart"></div>
+          <div id="chart-controls">
+            <form id="chartForm" class="chartForm">
+              <label>
+                  <input type="checkbox" id="averageChangeCheckbox" checked>
+                  Keskimääräinen muutos
+              </label>
+              <label>
+                  <input type="checkbox" id="medianChangeCheckbox" checked>
+                  Mediaani muutos
+              </label>
+              <label>
+                  <input type="checkbox" id="countCheckbox" checked>
+                  Lukumäärä
+              </label>
+              <label>
+                  <input type="checkbox" id="standardDeviationCheckbox" checked>
+                  Keskihajonta
+              </label>
+            </form>
+            <button type="button" onclick="updateChartClick()">Päivitä</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ||| Modal Script in index.js -->
+    <div id="usersModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="wrap">
+          <div id="table_div"></div>
+        </div>
+      </div>
+
+    </div>
+    <!-- ||| Footer -->
+    <footer>
+      © Lorem ipsum
+    </footer>
+
+  <!-- ||| Scripts -->
+  <!-- Charts-->
+  <script src="js/chart.js"></script>
+  <!-- Navigation etc-->
+	<script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+{
+    "usersData": [
+        {
+            "date": "2023-01-01",
+            "users": 143
+        },
+        {
+            "date": "2023-02-01",
+            "users": 150
+        },
+        {
+            "date": "2022-12-01",
+            "users": 140
+        },
+        {
+            "date": "2023-03-01",
+            "users": 151
+        },
+        {
+            "date": "2023-05-01",
+            "users": "160"
+        },
+        {
+            "date": "2022-11-01",
+            "users": 136
+        },
+        {
+            "date": "2023-06-01",
+            "users": 162
+        }
+    ],
+    "weightData": [
+        {
+            "month": 1,
+            "averageChange": -0.5,
+            "medianChange": -0.7,
+            "count": 500,
+            "standardDeviation": 0.1
+        },
+        {
+            "month": 2,
+            "averageChange": -0.78,
+            "medianChange": -0.8,
+            "count": 534,
+            "standardDeviation": 0.2
+        },
+        {
+            "month": 3,
+            "averageChange": -1.4,
+            "medianChange": -1.38,
+            "count": 580,
+            "standardDeviation": 1.0
+        },
+        {
+            "month": 4,
+            "averageChange": -2.0,
+            "medianChange": -2.1,
+            "count": 600,
+            "standardDeviation": 0.5
+        },
+        {
+            "month": 5,
+            "averageChange": -2.5,
+            "medianChange": -2.5,
+            "count": 604,
+            "standardDeviation": 2.0
+        },
+        {
+            "month": 6,
+            "averageChange": -3.78,
+            "medianChange": -3.8,
+            "count": 610,
+            "standardDeviation": 2.5
+        },
+        {
+            "month": 7,
+            "averageChange": -4.3,
+            "medianChange": -3.8,
+            "count": 620,
+            "standardDeviation": 2.0
+        },
+        {
+            "month": 8,
+            "averageChange": -4.5,
+            "medianChange": -4.5,
+            "count": 630,
+            "standardDeviation": 3.0
+        },
+        {
+            "month": 9,
+            "averageChange": -5.0,
+            "medianChange": -5.8,
+            "count": 640,
+            "standardDeviation": 2.0
+        },
+        {
+            "month": 10,
+            "averageChange": -5.5,
+            "medianChange": -5.5,
+            "count": 650,
+            "standardDeviation": 3.0
+        },
+        { 
+            "month": 11,
+            "averageChange": -6.1,
+            "medianChange": -5.79,
+            "count": 660,
+            "standardDeviation": 3.88  
+        },
+        {
+            "month": 12,
+            "averageChange": -6.5,
+            "medianChange": -6.5,
+            "count": 670,
+            "standardDeviation": 4.0
+        }
+    ]
+}
