@@ -74,10 +74,10 @@ const usersOptions = {
 function processWeightData(rawData) {
   let dataTable = new google.visualization.DataTable();
   dataTable.addColumn('string', 'Kuukausi');
-  dataTable.addColumn('number', 'Keskimääräinen muutos');
-  dataTable.addColumn('number', 'Mediaani muutos');
-  dataTable.addColumn('number', 'Lukumäärä');
-  dataTable.addColumn('number', 'Keskihajonta');
+  dataTable.addColumn('number', 'Keskimääräinen muutos (kg)');
+  dataTable.addColumn('number', 'Mediaani muutos (kg)');
+  dataTable.addColumn('number', 'Käyttäjiä (määrä)');
+  dataTable.addColumn('number', 'Keskihajonta (kg)');
 
   rawData.weightData.forEach(item => {
       dataTable.addRow([
@@ -105,7 +105,7 @@ const weightOptions = {
   axes: {
     y: {
       Metrics: {label: 'Kg'},
-      Count: {label: 'Lukumäärä'}
+      Count: {label: 'Määrä'}
     }
   },
   columnIndices: [], //Dynamic columns
